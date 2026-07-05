@@ -1,70 +1,44 @@
-.page {
-  max-width: 1920px;
-  margin: 0 auto;
-}
 
-body{
-    font-family: "Noto Sans TC", sans-serif;
-}
-
-.content {
-    width: 1296px;
-    margin:auto
+.site-navbar {
     
-}
-
-.navbar{
     display:flex;
     align-items: center;
+    
+    width:100%;
     max-width:1296px;
     height:80px;
     margin: 0 auto;
-    gap:40px;
 }
 
 .logo{
-    box-sizing: border-box;
-    font-display: mina;
-    font-style: bold;
+    flex-shrink: 0;
+    font-family: "mina", sans-serif;
     font-weight:700;
-    width:105px;
-    height:30px;
-    margin-right:40px;
+    white-space: nowrap;
 }
 
 .nav {
   display: flex;
+  flex-direction:row;
   align-items: center;
   gap: 40px;
+  margin-left: 40px;
 }
 
-.logo,
-.nav-text {
-  display: flex;
-  align-items: center;
-  height: 24px;
-  line-height: 24px;
-  margin: 0;
-  gap:40px;
-}
 
 .nav-text {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  white-space:nowrap;
 }
 
 .person {
+  display: flex;
+  align-items: center;
   margin-left: auto;
-  font-size: 24px;
-  cursor: pointer;
-  width:18px;
-  height:18px;
-  padding-top:3px;
-  padding-bottom: 3px;
-  justify-content:flex-end;
 }
+
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -73,6 +47,8 @@ body{
   'GRAD' 0,
   'opsz' 24
 }
+
+
 
 .homepage{
     display: flex;
